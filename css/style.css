@@ -31,6 +31,12 @@ body {
 }
 p,h1,h2,h3,h4,h5,h6 {
     margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -58,7 +64,8 @@ p,h1,h2,h3,h4,h5,h6 {
 
 .nav {
     display: flex;
-    margin-right: 331px;
+    margin-right: auto;
+    /*margin-right: 331px;*/
 }
 .list {
     padding: 0;
@@ -73,8 +80,7 @@ p,h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
     text-decoration: none;
     color: var(--accent-color);
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
+    /*text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
     padding: 24px 0 25px 0;
     margin-right: 93px;
 }
@@ -142,10 +148,14 @@ p,h1,h2,h3,h4,h5,h6 {
 .hero {
     text-align: center;
     background-color: var(--background-footer);
-    padding: 200px 452px 280px 452px;
+    /*padding: 200px 452px 280px 452px;*/
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
     /*margin-bottom: 30px;*/
+    margin: 0 auto;
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -229,6 +239,21 @@ p,h1,h2,h3,h4,h5,h6 {
     font-size: 16px;
     line-height: 1.18;
 }
+.team-border {
+    padding: 30px;
+    line-height: 10px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-color: var(--logo-black-color);
+    background-color: var(--primary-white-color);
+    border-radius: 0px 0px 4px 4px;
+
+    text-align: center;
+    /*background: var(--primary-white-color);
+    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);*/
+
+}
 
 /*--Button--*/
 .button {
@@ -236,6 +261,7 @@ p,h1,h2,h3,h4,h5,h6 {
     border: 1px solid transparent;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: 500;
     text-align: center;
 }
 .button.primary {
@@ -277,7 +303,10 @@ p,h1,h2,h3,h4,h5,h6 {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
+    margin-top: 50px;
+}
+.projects-title {
+    margin-bottom: 4px;
 }
 .projects .item {
     width: 370px;
@@ -325,6 +354,8 @@ p,h1,h2,h3,h4,h5,h6 {
 /*--Footer--*/
 .footer {
     background-color: var(--background-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
     font-family: 'Raleway', sans-serif;
@@ -345,11 +376,14 @@ p,h1,h2,h3,h4,h5,h6 {
     font-style: normal;
     line-height: 1.71;
     color: var(--primary-white-color);
-    
+    margin-top: 20px;
 }
 .address-link {
     text-decoration: none;
     color: var(--address-text-color);
+}
+.address-nav .item+ .item {
+    margin-top: 9px;
 }
 
 
