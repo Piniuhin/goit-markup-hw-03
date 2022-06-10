@@ -233,6 +233,7 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 10px;
     color: var(--title-text-color);
 }
 .team-list .text {
@@ -241,18 +242,13 @@ img {
 }
 .team-border {
     padding: 30px;
-    line-height: 10px;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 1px solid;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     border-color: var(--logo-black-color);
     background-color: var(--primary-white-color);
     border-radius: 0px 0px 4px 4px;
 
     text-align: center;
-    /*background: var(--primary-white-color);
-    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);*/
-
 }
 
 /*--Button--*/
